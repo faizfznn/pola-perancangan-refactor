@@ -1,5 +1,7 @@
 package casev2.payment;
 
+// Dependency Inversion Principle (DIP) - Abstract payment gateway
 public interface PaymentGateway {
-    void pay(double amount);
+    boolean processPayment(double amount);
+    String getGatewayName();
 }

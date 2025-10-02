@@ -1,8 +1,11 @@
 package casev2.ticket;
 
 public class GoPayProcessor implements PaymentProcessor {
+    
     @Override
-    public void processPayment(String studentId) {
-        System.out.println("Paid with GoPay for student " + studentId);
+    public boolean processPayment(double amount) {
+        System.out.println("GoPayProcessor: Processing payment of Rp " + amount);
+        // Simulate payment processing
+        return true;
     }
 }

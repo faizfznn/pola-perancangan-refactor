@@ -1,5 +1,6 @@
 package casev2.ticket;
 
+// Single Responsibility Principle (SRP) - Payment processing interface
 public interface PaymentProcessor {
-    void processPayment(String studentId);
+    boolean processPayment(double amount);
 }
